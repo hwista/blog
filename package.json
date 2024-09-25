@@ -1,5 +1,12 @@
 {
-  "name": "nuxt-app",
+  "name": "hwilog",
+  "version": "0.0.0",
+  "description": "hwista-blog for dev",
+  "author": {
+    "name": "Sun Choe",
+    "email": "duolctroo@gmail.com"
+  },
+  "homepage": "https://hwista.github.io/blog/",
   "private": true,
   "type": "module",
   "scripts": {
@@ -8,8 +15,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages ",
-    "homepage": "https://hwista.github.io/blog/"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -t true -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.1.1",
