@@ -7,6 +7,6 @@ export default defineNuxtConfig({
     preset : 'github-pages' 
     },
   app : {
-    baseURL : '/hwilog/' 
+    baseURL : '/blog/' 
    }
 })
